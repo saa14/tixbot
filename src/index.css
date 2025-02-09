@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: #121212; /* Dark background */
+    color: white; /* Light text color */
+}
+
+/* Additional styles for components */
+.light .bg-blue-500 {
+    background-color: #3b82f6; /* Tailwind blue */
+}
+
+.dark .bg-blue-500 {
+    background-color: #1d4ed8; /* Darker blue for dark theme */
+}
+
+.light .border {
+    border-color: #e5e7eb; /* Light border color */
+}
+
+.dark .border {
+    border-color: #4b5563; /* Darker border color for dark theme */
+}
+
+.light input,
+.light button {
+    background-color: white; /* Light input and button background */
+    color: black; /* Light input and button text */
+}
+
+.dark input,
+.dark button {
+    background-color: #333; /* Dark input and button background */
+    color: white; /* Dark input and button text */
+}
+
+button {
+    transition: background-color 0.3s ease; /* Smooth transition for button background */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+button:hover {
+    background-color: rgba(59, 130, 246, 0.7); /* Light blue hover effect */
+}
+
+.dark button:hover {
+    background-color: rgba(29, 78, 216, 0.7); /* Dark blue hover effect */
+}

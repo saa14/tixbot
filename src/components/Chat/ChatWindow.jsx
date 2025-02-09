@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import ChatBubble from './ChatBubble';
 import ChatInput from './ChatInput';
 import { v4 as uuidv4 } from 'uuid';
+import { useTheme } from '../../ThemeContext';
+import ThemeToggle from './ThemeToggle';
 
 const ChatWindow = () => {
   const { messages, isLoading, error } = useSelector((state) => state.chat);
@@ -12,6 +14,8 @@ const ChatWindow = () => {
     const savedUserId = localStorage.getItem('userId');
     return savedUserId ? savedUserId : uuidv4(); // Generate a new ID if none exists
   });
+
+  const { theme } = useTheme();
 
   useEffect(() => {
     // Store the user ID in local storage
@@ -27,8 +31,8 @@ const ChatWindow = () => {
   }, [messages]);
 
   return (
-    <div className="flex h-[600px] w-full max-w-md flex-col rounded-lg border shadow-lg">
-      <div className="bg-blue-500 rounded-t-lg p-4">
+    <div className={`flex h-[600px] w-full max-w-md flex-col rounded-lg border shadow-lg ${theme}`}>
+      <div className={`bg-blue-500 rounded-t-lg p-4 ${theme}`}>
         <h2 className="text-lg font-semibold text-white text-center">Tixbot</h2>
       </div>
       
@@ -47,6 +51,10 @@ const ChatWindow = () => {
           <div className="text-red-500 text-center my-2">{error}</div>
         )}
         <div ref={messagesEndRef} />
+      </div>
+      
+      <div className="flex justify-end p-2">
+        <ThemeToggle />
       </div>
       
       <ChatInput userId={userId} />
