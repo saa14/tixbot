@@ -8,6 +8,9 @@ TixBot is a ticket booking application that integrates with Dialogflow for natur
 - [Installation](#installation)
 - [Running the Frontend](#running-the-frontend)
 - [Running the Backend](#running-the-backend)
+- [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
 
 ## Prerequisites
 
@@ -57,3 +60,41 @@ Before you begin, ensure you have met the following requirements:
    ```
 
 3. The backend will run on `http://localhost:3001` by default.
+
+## Environment Variables
+
+To run the application, you need to set up environment variables. Create a `.env` file in the `backend` directory and add the following variables:
+
+```
+DIALOGFLOW_PROJECT_ID=your-dialogflow-project-id
+```
+
+If you have a production environment, create a `.env.production` file in the `backend` directory with the same variables.
+
+### Dialogflow Credentials
+
+You also need to set up your Dialogflow credentials. Place your `dialogflow-credentials.json` file in the `backend/credentials/` directory. Ensure that this file is not tracked by Git by adding it to your `.gitignore`.
+
+## Usage
+
+Once both the frontend and backend are running, you can interact with the application. The frontend will send requests to the backend, which will process them and respond accordingly.
+
+## API Endpoints
+
+The backend server exposes the following endpoints:
+
+- POST `/api/chat`: Send messages to the chatbot
+  ```
+  POST http://localhost:3001/chat
+  Content-Type: application/json
+
+  {
+    "userId": "string",
+    "message": "string"
+  }
+  ```
+
+- POST `/api/webhook`: Dialogflow webhook endpoint
+  ```
+  POST http://localhost:3001/webhook
+  ```
