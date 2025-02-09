@@ -1,0 +1,8 @@
+# Ignore environment files
+backend/.env
+.env
+.env.production
+
+# Ignore certificates
+backend/certs/
+backend/credentials/
