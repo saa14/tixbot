@@ -8,6 +8,7 @@ TixBot is a ticket booking application that integrates with Dialogflow for natur
 - [Installation](#installation)
 - [Running the Frontend](#running-the-frontend)
 - [Running the Backend](#running-the-backend)
+- [Running Unit Tests](#running-unit-tests)
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
@@ -51,6 +52,26 @@ Before you begin, ensure you have met the following requirements:
    ```
 
 2. The backend will run on `http://localhost:3001` by default.
+
+## Running Unit Tests
+To run the unit tests for both the frontend and backend, follow these steps:
+
+1. **Run All Tests**: To execute all unit tests, use the following command:
+   ```bash
+   npm test
+   ```
+
+2. **Run Frontend Tests Only**: If you want to run only the frontend tests, use:
+   ```bash
+   npm run test:frontend
+   ```
+
+3. **Run Backend Tests Only**: To run only the backend tests, use:
+   ```bash
+   npm run test:backend
+   ```
+
+After running the tests, you will see the results in the terminal. Any failing tests will be highlighted, and you can review the error messages to debug issues.
 
 ## Running locally:
    ```bash
@@ -108,7 +129,6 @@ The following scripts are available in the combined `package.json`:
 - `start:backend`: Starts the backend server.
 - `start:frontend`: Starts the frontend development server.
 - `start:dev`: Runs both the frontend and backend servers concurrently.
-
 
 ## License
 
