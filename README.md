@@ -2,6 +2,12 @@
 
 TixBot is a ticket booking application that integrates with Dialogflow for natural language processing. This README provides instructions on how to run the application locally.
 
+## Demo
+
+ Here's a demo of how it works:
+
+ ![Demo](/demo.gif)
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
