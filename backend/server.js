@@ -73,6 +73,11 @@ app.post('/api/chat', async (req, res) => {
 app.post('/api/webhook', async (req, res) => {
   console.log('Webhook Request:', req.body);
   
+  // Check if queryResult exists in the request body
+  if (!req.body.queryResult || !req.body.queryResult.parameters) {
+    return res.status(400).json({ error: 'Invalid input: bookingCategory is required.' });
+  }
+
   const bookingCategory = req.body.queryResult.parameters.bookingCategory?.toLowerCase();
   const selectedOption = req.body.queryResult.parameters.selectedOption?.toLowerCase();
   
@@ -155,4 +160,18 @@ app.post('/api/webhook', async (req, res) => {
   res.json(response);
 });
 
-app.listen(3001, () => console.log('Server running on port 3001')); 
+// Handle unsupported methods
+app.all('/api/chat', (req, res) => {
+  res.status(405).send('Method Not Allowed');
+});
+
+// Export the app
+module.exports = app;
+
+// Start the server only if this file is run directly
+if (require.main === module) {
+  const PORT = process.env.PORT || 3001;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+} 
