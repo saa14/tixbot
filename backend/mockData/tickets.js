@@ -6,7 +6,7 @@ const mockData = {
       showtimes: ["10:00 AM", "2:00 PM", "6:00 PM"],
       dates: ["11-02-2025", "12-02-2025", "13-02-2025"],
       price: 12.99,
-      availableSeats: 45
+      availableSeats: 45,
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ const mockData = {
       showtimes: ["11:00 AM", "3:00 PM", "7:00 PM"],
       dates: ["14-02-2025", "15-02-2025", "16-02-2025"],
       price: 14.99,
-      availableSeats: 30
+      availableSeats: 30,
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ const mockData = {
       showtimes: ["12:00 PM", "4:00 PM", "8:00 PM"],
       dates: ["17-02-2025", "18-02-2025", "19-02-2025"],
       price: 15.99,
-      availableSeats: 50
+      availableSeats: 50,
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ const mockData = {
       showtimes: ["1:00 PM", "5:00 PM", "9:00 PM"],
       dates: ["20-02-2025", "21-02-2025", "22-02-2025"],
       price: 10.99,
-      availableSeats: 40
+      availableSeats: 40,
     },
     {
       id: 5,
@@ -38,45 +38,213 @@ const mockData = {
       showtimes: ["3:00 PM", "7:00 PM", "11:00 PM"],
       dates: ["23-02-2025", "24-02-2025", "25-02-2025"],
       price: 18.99,
-      availableSeats: 25
-    }
+      availableSeats: 25,
+    },
+    {
+      id: 6,
+      name: "Titanic",
+      showtimes: ["2:00 PM", "6:00 PM", "10:00 PM"],
+      dates: ["26-02-2025", "27-02-2025", "28-02-2025"],
+      price: 11.99,
+      availableSeats: 35,
+    },
+    {
+      id: 7,
+      name: "Jurassic Park",
+      showtimes: ["12:30 PM", "4:30 PM", "8:30 PM"],
+      dates: ["01-03-2025", "02-03-2025", "03-03-2025"],
+      price: 13.99,
+      availableSeats: 20,
+    },
+    {
+      id: 8,
+      name: "The Godfather",
+      showtimes: ["1:30 PM", "5:30 PM", "9:30 PM"],
+      dates: ["04-03-2025", "05-03-2025", "06-03-2025"],
+      price: 16.99,
+      availableSeats: 15,
+    },
+    {
+      id: 9,
+      name: "Pulp Fiction",
+      showtimes: ["3:30 PM", "7:30 PM", "11:30 PM"],
+      dates: ["07-03-2025", "08-03-2025", "09-03-2025"],
+      price: 14.99,
+      availableSeats: 10,
+    },
+    {
+      id: 10,
+      name: "Forrest Gump",
+      showtimes: ["2:15 PM", "6:15 PM", "10:15 PM"],
+      dates: ["10-03-2025", "11-03-2025", "12-03-2025"],
+      price: 12.49,
+      availableSeats: 5,
+    },
   ],
   events: [
     {
       id: 1,
       name: "Taylor Swift Concert",
       venue: "Madison Square Garden",
-      dates: ["16-02-2025", "17-02-2025"],
+      dates: ["13-03-2025", "14-03-2025"],
       price: 89.99,
-      availableSeats: 200
+      availableSeats: 200,
     },
     {
       id: 2,
       name: "Comic Con 2025",
       venue: "Convention Center",
-      dates: ["20-02-2025", "21-02-2025"],
-      price: 45.00,
-      availableSeats: 500
-    }
+      dates: ["15-03-2025", "16-03-2025"],
+      price: 45.0,
+      availableSeats: 500,
+    },
+    {
+      id: 3,
+      name: "Rock Festival",
+      venue: "Central Park",
+      dates: ["17-03-2025", "18-03-2025"],
+      price: 75.0,
+      availableSeats: 300,
+    },
+    {
+      id: 4,
+      name: "Food Expo",
+      venue: "City Hall",
+      dates: ["19-03-2025", "20-03-2025"],
+      price: 25.0,
+      availableSeats: 150,
+    },
+    {
+      id: 5,
+      name: "Art Exhibition",
+      venue: "Art Museum",
+      dates: ["21-03-2025", "22-03-2025"],
+      price: 20.0,
+      availableSeats: 100,
+    },
+    {
+      id: 6,
+      name: "Tech Conference",
+      venue: "Convention Center",
+      dates: ["23-03-2025", "24-03-2025"],
+      price: 150.0,
+      availableSeats: 250,
+    },
+    {
+      id: 7,
+      name: "Charity Gala",
+      venue: "Grand Hotel",
+      dates: ["25-03-2025"],
+      price: 200.0,
+      availableSeats: 50,
+    },
+    {
+      id: 8,
+      name: "Theater Play",
+      venue: "Local Theater",
+      dates: ["26-03-2025", "27-03-2025"],
+      price: 30.0,
+      availableSeats: 80,
+    },
+    {
+      id: 9,
+      name: "Dance Competition",
+      venue: "City Auditorium",
+      dates: ["28-03-2025"],
+      price: 40.0,
+      availableSeats: 120,
+    },
+    {
+      id: 10,
+      name: "Film Festival",
+      venue: "Downtown Cinema",
+      dates: ["29-03-2025", "30-03-2025"],
+      price: 60.0,
+      availableSeats: 200,
+    },
   ],
   travel: [
     {
       id: 1,
       name: "Paris Package",
       duration: "7 days",
-      dates: ["15-02-2025", "20-02-2025", "25-02-2025"],
+      dates: ["01-04-2025", "15-04-2025", "30-04-2025"],
       price: 1299.99,
-      availableSeats: 20
+      availableSeats: 20,
     },
     {
       id: 2,
       name: "Tokyo Adventure",
       duration: "10 days",
-      dates: ["26-02-2025", "05-03-2025", "15-03-2025"],
+      dates: ["01-05-2025", "15-05-2025", "30-05-2025"],
       price: 1599.99,
-      availableSeats: 15
-    }
-  ]
+      availableSeats: 15,
+    },
+    {
+      id: 3,
+      name: "New York City Tour",
+      duration: "5 days",
+      dates: ["01-06-2025", "10-06-2025"],
+      price: 899.99,
+      availableSeats: 25,
+    },
+    {
+      id: 4,
+      name: "London Getaway",
+      duration: "6 days",
+      dates: ["01-07-2025", "15-07-2025"],
+      price: 1099.99,
+      availableSeats: 10,
+    },
+    {
+      id: 5,
+      name: "Sydney Experience",
+      duration: "8 days",
+      dates: ["01-08-2025", "10-08-2025"],
+      price: 1399.99,
+      availableSeats: 5,
+    },
+    {
+      id: 6,
+      name: "Rome Historical Tour",
+      duration: "7 days",
+      dates: ["01-09-2025", "15-09-2025"],
+      price: 1199.99,
+      availableSeats: 12,
+    },
+    {
+      id: 7,
+      name: "Dubai Luxury Trip",
+      duration: "10 days",
+      dates: ["01-10-2025", "15-10-2025"],
+      price: 1999.99,
+      availableSeats: 8,
+    },
+    {
+      id: 8,
+      name: "Iceland Adventure",
+      duration: "7 days",
+      dates: ["01-11-2025", "10-11-2025"],
+      price: 1499.99,
+      availableSeats: 6,
+    },
+    {
+      id: 9,
+      name: "Thailand Beach Holiday",
+      duration: "10 days",
+      dates: ["15-12-2025", "30-12-2025"],
+      price: 1299.99,
+      availableSeats: 20,
+    },
+    {
+      id: 10,
+      name: "Canada Ski Trip",
+      duration: "7 days",
+      dates: ["01-01-2026", "15-01-2026"],
+      price: 1599.99,
+      availableSeats: 10,
+    },
+  ],
 };
 
 module.exports = mockData; 
