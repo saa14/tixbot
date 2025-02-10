@@ -1,0 +1,9 @@
+{
+  "id": "3cc2c0f9-72fc-45e4-a4c7-3936aa84d05e",
+  "name": "MovieTitle",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

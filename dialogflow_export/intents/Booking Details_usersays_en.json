@@ -1,0 +1,94 @@
+[
+  {
+    "id": "1ce7a41b-a8db-4cc8-8ba5-28876a1377d7",
+    "data": [
+      {
+        "text": "2",
+        "meta": "@sys.number",
+        "alias": "ticketCount",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "923c3706-baf2-44c3-88cb-083089b05ec7",
+    "data": [
+      {
+        "text": "2",
+        "meta": "@sys.number",
+        "alias": "ticketCount",
+        "userDefined": false
+      },
+      {
+        "text": " tickets for ",
+        "userDefined": false
+      },
+      {
+        "text": "7 PM tomorrow",
+        "meta": "@sys.date",
+        "alias": "bookingDate",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f287dcc0-d820-4a08-83fc-f70af850c097",
+    "data": [
+      {
+        "text": "I’d like 2 tickets for tomorrow at 7 PM.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "46c91867-749a-4171-abac-f47777a82514",
+    "data": [
+      {
+        "text": "Book 3 tickets on June 5th at 9:30 PM.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "26841284-f626-498d-9286-75d0535166d0",
+    "data": [
+      {
+        "text": "Can I get 1 ticket for next Friday at 8 PM?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ebc49354-93c1-4af5-9cbb-2810e98627d6",
+    "data": [
+      {
+        "text": "I want to book 4 tickets for Saturday at 6 PM.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

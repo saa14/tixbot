@@ -1,0 +1,77 @@
+{
+  "id": "21c8ba36-0061-45dd-922d-8f8a39c7ae22",
+  "name": "Select Event",
+  "auto": true,
+  "contexts": [
+    "booking-start",
+    "category-confirmed"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "option-selected",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "5a9cbe07-e894-4042-9c93-0f01eb79d266",
+          "name": "selectedOption",
+          "required": true,
+          "dataType": "@EventTitle",
+          "value": "$selectedOption",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which event would you like to attend?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "61b87d34-72ad-403c-9258-77e79004ab4d",
+          "name": "bookingCategory",
+          "required": false,
+          "dataType": "@BookingCategory",
+          "value": "Events",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "How many tickets would you like to book for $selectedOption.original?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

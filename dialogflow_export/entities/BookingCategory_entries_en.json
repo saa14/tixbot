@@ -1,0 +1,29 @@
+[
+  {
+    "value": "Movies",
+    "synonyms": [
+      "Movies",
+      "Movie",
+      "movies",
+      "movie"
+    ]
+  },
+  {
+    "value": "Events",
+    "synonyms": [
+      "Events",
+      "Event",
+      "events",
+      "event"
+    ]
+  },
+  {
+    "value": "Travel",
+    "synonyms": [
+      "Travel",
+      "Travels",
+      "travels",
+      "travel"
+    ]
+  }
+]

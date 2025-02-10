@@ -1,0 +1,72 @@
+{
+  "id": "68e5e10a-7201-4b0e-8a8c-d1c431cd3a2b",
+  "name": "Select Category",
+  "auto": true,
+  "contexts": [
+    "booking-start"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "category-confirmed",
+          "lifespan": 5,
+          "parameters": {
+            "bookingCategory": {
+              "value": "$bookingCategory",
+              "dataType": "@BookingCategory",
+              "required": true,
+              "isList": false,
+              "defaultValue": "",
+              "id": "ed79942a-ce02-4469-8dda-d25c6268a59f"
+            }
+          }
+        }
+      ],
+      "parameters": [
+        {
+          "id": "7faccc43-9c3a-4a6c-bf3c-5ff67da51835",
+          "name": "bookingCategory",
+          "required": true,
+          "dataType": "@BookingCategory",
+          "value": "$bookingCategory",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Would you like to book for Movies, Events, or Travel?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Sure. I will help you book tickets for $bookingCategory.original."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

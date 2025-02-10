@@ -1,0 +1,81 @@
+{
+  "id": "b83ae32a-9833-4496-ac28-7b9cbcc828bb",
+  "name": "Select Movie",
+  "auto": true,
+  "contexts": [
+    "booking-start",
+    "category-confirmed"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "option-selected",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "67ae8c2b-bfef-445f-a0c7-90de88654c21",
+          "name": "bookingCategory",
+          "required": false,
+          "dataType": "@BookingCategory",
+          "value": "Movies",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5adf7509-5fcc-40d5-8482-fdc0e640ad42",
+          "name": "selectedOption",
+          "required": true,
+          "dataType": "@MovieTitle",
+          "value": "$selectedOption",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Can you please provide a movie name from the list?"
+            },
+            {
+              "lang": "en",
+              "value": "Which movie would you like to see?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "How many tickets would you like to book for $selectedOption.original?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

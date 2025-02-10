@@ -1,0 +1,54 @@
+[
+  {
+    "id": "051e34fd-9321-47d6-9c5b-ae80c380797d",
+    "data": [
+      {
+        "text": "Yes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7552518e-a51d-458c-be8e-3328c13e008b",
+    "data": [
+      {
+        "text": "Booking details",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "faa98a9a-9bb7-4f2a-8783-05e457124138",
+    "data": [
+      {
+        "text": "Can you confirm my booking?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "4b49b37e-f080-4cd7-a361-d49856a9a3cb",
+    "data": [
+      {
+        "text": "I want to check my booking details.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

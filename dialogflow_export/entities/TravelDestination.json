@@ -1,0 +1,9 @@
+{
+  "id": "3c061635-9ced-4fbc-933b-af5441ee3a9a",
+  "name": "TravelDestination",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

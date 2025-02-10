@@ -1,0 +1,9 @@
+{
+  "id": "cb2e7ee6-59a6-4055-a0d1-64dca3ad0b2e",
+  "name": "BookingCategory",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

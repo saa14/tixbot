@@ -1,0 +1,108 @@
+{
+  "id": "b7bfcf84-ad52-4b22-8572-11fdace25d64",
+  "name": "Booking Details",
+  "auto": true,
+  "contexts": [
+    "option-selected"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "details-collected",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ff47dbd5-f867-47d6-a461-c2fd63799eca",
+          "name": "bookingDate",
+          "required": true,
+          "dataType": "@sys.date",
+          "value": "$bookingDate",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What day would you like me to book a ticket for?"
+            },
+            {
+              "lang": "en",
+              "value": "Please enter a valid date (DD-MM-YYYY)."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c5b36427-eb70-457c-b58e-1f5e22301053",
+          "name": "bookingTime",
+          "required": true,
+          "dataType": "@sys.time",
+          "value": "$bookingTime",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What time would you like me to book the ticket for?"
+            },
+            {
+              "lang": "en",
+              "value": "Please enter a valid time (HH:MM AM/PM)."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "286c4dee-310b-46f9-a2f2-ee2f7dc8eeb4",
+          "name": "ticketCount",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$ticketCount",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "How many tickets would you like to book?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Thank you for providing the booking details. We will proceed with your request. Would you like to confirm your booking?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

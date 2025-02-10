@@ -1,0 +1,101 @@
+{
+  "id": "da1913bb-7ffe-47b3-9bc8-d69ee3a11023",
+  "name": "Confirm Booking",
+  "auto": true,
+  "contexts": [
+    "details-collected",
+    "option-selected"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "booking-confirmed",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "cb68f3e0-7817-4f92-88f8-534023c6c82f",
+          "name": "bookingDate",
+          "required": false,
+          "dataType": "",
+          "value": "#details-collected.bookingDate.original",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "99267f5b-cd87-48c8-808b-15f0feec4719",
+          "name": "bookingTime",
+          "required": false,
+          "dataType": "",
+          "value": "#details-collected.bookingTime.original",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "79cb190b-c03c-42f5-8af3-3b01d1877446",
+          "name": "ticketCount",
+          "required": false,
+          "dataType": "",
+          "value": "#details-collected.ticketCount.original",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "9ad6ded8-43cb-4fd4-83cb-09a2497439fe",
+          "name": "selectedOption",
+          "required": false,
+          "dataType": "",
+          "value": "#option-selected.selectedOption.original",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Thank you for your booking! 🎟️\n\n\nHere are your booking details:\n\n\n✅ Movie/Event/Travel Destination: $selectedOption\n📅 Date: $bookingDate\n⏰ Time: $bookingTime\n🎫 Number of Tickets: $ticketCount\n\n\nEnjoy your experience! 😊"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

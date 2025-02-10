@@ -1,0 +1,119 @@
+[
+  {
+    "id": "6641990b-dd52-4429-9975-5deda4e87b65",
+    "data": [
+      {
+        "text": "I want to travel",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b9df3809-01fc-4198-be62-10d23bd7acea",
+    "data": [
+      {
+        "text": "travels",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "cd5e77c9-33d6-40a9-8b2c-010c40c06d73",
+    "data": [
+      {
+        "text": "travel",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f5f1b99c-31be-4e99-a7e9-92fbd28b6a95",
+    "data": [
+      {
+        "text": "I want to travel to Paris.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "15d22255-7206-4c6b-bb97-4a7658ed9f1e",
+    "data": [
+      {
+        "text": "Can you help me book a flight to New York?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6b363ca9-c4dd-47a8-afeb-1077265d4848",
+    "data": [
+      {
+        "text": "I\u0027d like to book a train to Mumbai.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ddae6a09-44e8-439a-b36e-cf44b23a76d2",
+    "data": [
+      {
+        "text": "Can I get tickets to London this weekend?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e7d20bff-05b6-49b6-a97d-ac5e05005407",
+    "data": [
+      {
+        "text": "I want to book a ticket for Tokyo.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8f2f7314-b2fe-4235-b81b-486378ded5d4",
+    "data": [
+      {
+        "text": "Book me a flight to Dubai.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

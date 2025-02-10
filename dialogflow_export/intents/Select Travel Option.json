@@ -1,0 +1,77 @@
+{
+  "id": "e9eacc11-5f88-4338-bc84-9a5b6f7827b4",
+  "name": "Select Travel Option",
+  "auto": true,
+  "contexts": [
+    "booking-start",
+    "category-confirmed"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "option-selected",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "eec1a65d-b93a-4038-900e-1070d2c341b6",
+          "name": "selectedOption",
+          "required": true,
+          "dataType": "@TravelDestination",
+          "value": "$selectedOption",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which destination would you like to travel to?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7bded14a-50f4-4fba-aaa0-6f1394f59776",
+          "name": "bookingCategory",
+          "required": false,
+          "dataType": "@BookingCategory",
+          "value": "Travel",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "How many tickets would you like to book for $selectedOption.original?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

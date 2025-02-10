@@ -1,0 +1,80 @@
+[
+  {
+    "id": "d9bb3f81-1b7c-4883-a925-58bd4130ca8a",
+    "data": [
+      {
+        "text": "Yes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ed79942a-ce02-4469-8dda-d25c6268a58f",
+    "data": [
+      {
+        "text": "Need tickets",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "41c25922-bf6b-46a3-8091-2e9c030d698b",
+    "data": [
+      {
+        "text": "tickets",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "55fa1a77-dca4-4480-b4b7-0a1919e26cc3",
+    "data": [
+      {
+        "text": "Book",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "238436f3-b2f2-4d21-9b71-853a84a84c70",
+    "data": [
+      {
+        "text": "Book tickets",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d4948b5d-35fd-4699-b5f7-fb69587e3583",
+    "data": [
+      {
+        "text": "I want to book a ticket",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
