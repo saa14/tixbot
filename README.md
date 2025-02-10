@@ -11,6 +11,7 @@ TixBot is a ticket booking application that integrates with Dialogflow for natur
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
+- [Scripts](#scripts)
 
 ## Prerequisites
 
@@ -30,11 +31,6 @@ Before you begin, ensure you have met the following requirements:
 
 2. Install dependencies for both frontend and backend:
    ```bash
-   # Navigate to the root directory
-   npm install
-
-   # Navigate to the backend directory
-   cd ../backend
    npm install
    ```
 
@@ -42,34 +38,36 @@ Before you begin, ensure you have met the following requirements:
 
 1. Start the development server:
    ```bash
-   npm start
+   npm run start:frontend
    ```
 
 2. Open your browser and go to `http://localhost:3000` to view the application.
 
 ## Running the Backend
 
-1. Navigate to the backend directory:
+1. Start the backend server:
    ```bash
-   cd backend
+   npm run start:backend
    ```
 
-2. Start the backend server:
-   ```bash
-   npm start
-   ```
+2. The backend will run on `http://localhost:3001` by default.
 
-3. The backend will run on `http://localhost:3001` by default.
+## Running locally:
+   ```bash
+   npm run start:dev
+   ```
 
 ## Environment Variables
 
-To run the application, you need to set up environment variables. Create a `.env` file in the `backend` directory and add the following variables:
+To run the application, you need to set up environment variables. Create a `.env` file in the root directory and add the following variables:
 
 ```
-DIALOGFLOW_PROJECT_ID=your-dialogflow-project-id
+REACT_APP_BACKEND_URL=http://localhost:3001
+DIALOGFLOW_PROJECT_ID=tixbot-ymsn
+DIALOGFLOW_CREDENTIALS=your-dialogflow-credentials
 ```
 
-If you have a production environment, create a `.env.production` file in the `backend` directory with the same variables.
+If you have a production environment, create a `.env.production` file in the root directory with the same variables.
 
 ### Dialogflow Credentials
 
@@ -85,7 +83,7 @@ The backend server exposes the following endpoints:
 
 - POST `/api/chat`: Send messages to the chatbot
   ```
-  POST http://localhost:3001/chat
+  POST http://localhost:3001/api/chat
   Content-Type: application/json
 
   {
@@ -96,5 +94,22 @@ The backend server exposes the following endpoints:
 
 - POST `/api/webhook`: Dialogflow webhook endpoint
   ```
-  POST http://localhost:3001/webhook
+  POST http://localhost:3001/api/webhook
   ```
+
+## Scripts
+
+The following scripts are available in the combined `package.json`:
+
+- `start`: Starts the frontend development server.
+- `build`: Builds the frontend application for production.
+- `test`: Runs tests for the frontend application.
+- `eject`: Ejects the Create React App configuration.
+- `start:backend`: Starts the backend server.
+- `start:frontend`: Starts the frontend development server.
+- `start:dev`: Runs both the frontend and backend servers concurrently.
+
+
+## License
+
+This project is licensed under the MIT License.
